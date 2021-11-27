@@ -1,13 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
     <title>EJERCICIO 3</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="../index.html">Inicio</a>
+      <a href="#about">Acerca de...</a>
+    </div>
+
+    <div>
+      <h1>Formulario</h1>
+    </div>
+
+    <div>
+      <form>
+        <div>
+          <label for="number10">Input para numeros maximo 10 caracteres:</label>
+          <input type="number" pattern="\d*" maxlength="10" return false; id="number10" placeholder="Ingrese un numero"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+        </div>
+        <div>
+          <label for="text140">Primer Input para text maximo 40 caracteres:</label>
+          <input type="text" maxlength="40" id="text140" placeholder="Escriba algo"/>
+        </div>
+        <div>
+          <label for="text240">Segundo Input para text maximo 40 caracteres:</label>
+          <input type="text" maxlength="40" id="text240" placeholder="Escriba algo"/>
+        </div>
+        <div>
+          <label for="textarea200">Input para textarea maximo 200 caracteres y 3 filas:</label>
+          <textarea rows="3" cols="67" maxlength="200" id="textarea200" placeholder="Escriba algo"></textarea>
+        </div>
+        <div>
+          <label for="dates">Input para la fecha:</label>
+          <input type="date" maxlength="40" id="dates" name="dates"/>
+        </div>
+        <div>
+          <label for="times">Input para la hora:</label>
+          <input type="time" maxlength="40" id="times" name="times"/>
+        </div>
+        <div>
+          <label for="estadocivil">Seleccione su estado civil:</label>
+          <input type="checkbox" id="estadocivil" name="estadocivil"/ onclick="funti(this)"> Casado/a
+          <input type="checkbox" id="estadocivil" name="estadocivil"/ onclick="funti(this)"> Soltero/a
+          <input type="checkbox" id="estadocivil" name="estadocivil"/ onclick="funti(this)"> Viudo/a
+        </div>
+        <div>
+          <label for="sexo">Seleccione su sexo:</label>
+          <div id="sexo">
+            <input type="radio" name="sexo" value="H" /> Hombre
+            <input type="radio" name="sexo" value="M" /> Mujer
+            <input type="radio" name="sexo" value="O" /> Otro
+          </div>
+        </div>
+        <div>
+            <label for="colorselector">Seleccione su color favorito:</label>
+            <input type="color" name="colorselector" id="colorselector">
+        </div>
+        <div>
+            <label for="correo">Ingrese su correo electronico:</label>
+            <input type="email" name="correo" id="correo">
+        </div>
+        <div>
+            <label for="jobstate">Seleccione su estado laboral</label>
+            <select name="jobstate" id="jobstate">
+                <option value="1">Empleado</option> 
+                <option value="2">Desempleado</option> 
+                <option value="3">Buscando trabajo</option>
+                <option value="4">Freelancer</option>
+             </select>
+        </div>
+        <div>
+            <label for="food">Seleccione uno o varios platos favoritos</label>
+            <select name="food" size="3" id="food" multiple>
+                <option value="1">Arroz con pollo</option> 
+                <option value="2">Sopa de mondongo</option> 
+                <option value="3">Chicharron con yuca</option>
+                <option value="4">Tajada con huevo</option>
+                <option value="5">Arroz con sardina</option>
+                <option value="6">Pastel (Tamal)</option>
+             </select>
+        </div>
+        <div>
+            <label for="frutas"></label>
+            <input list="frutas" name="frutas" type="text">
+            <datalist id="frutas">
+                <option value="Mora"></option>
+                <option value="Nispero"></option>
+                <option value="Sandia"></option>
+                <option value="Platano"></option>
+                <option value="Pomelo"></option>
+                <option value="Pera"></option>
+                <option value="Kiwi"></option>
+                <option value="Piña"></option>
+                <option value="Tomate de Arbol"></option>
+                <option value="Gradadilla"></option>
+                <option value="Maracuyá"></option>
+                <option value="Guanábana"></option>
+            </datalist>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
+
+<script>
+    function funti(checkbox) {
+        var checkboxes = document.getElementsByName('estadocivil')
+        checkboxes.forEach((item) => {
+            if (item !== checkbox) item.checked =  false;
+        })
+    }
+  </script>
