@@ -1,0 +1,78 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #EBF3F3;
+  }
+  
+  .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    
+    .topnav a.active {
+      background-color: #732471;
+      color: white;
+    }
+
+    .maintop {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      grid-auto-rows: minmax(100px, auto);
+      justify-items: center;
+
+    }
+
+    .categoriasimg {
+      max-width: 200px;
+    }
+
+    .categoria1 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    .categoria2 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    .categoria3 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    .categoria4 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    .categoria5 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
+    .categoria6 {
+      align-self: center;
+      place-self: center;
+      text-align: center;
+      border: 1px solid gray;
+    }
