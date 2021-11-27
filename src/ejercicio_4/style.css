@@ -18,32 +18,90 @@
   }
   
   .topnav a.active {
-    background-color: blue;
+    background-color: green;
     color: white;
   }
 
   .content {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      height: 600px;
-      text-align: center;
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
   }
   .header {
       justify-content: center;
+      border: 1px solid #333;
+      text-transform: uppercase;
+      font-weight: bold;
   }
   .main{
-      display: flex;
-      flex-basis: max-content;
-      justify-content: space-between;
-      align-items: center;
+    border: 1px solid #333;
+    display: flex;
+    flex-basis: max-content;
+    justify-content: space-between;
+    align-items: center;
   }
   .mainleft {
+    border: 1px solid #333;
     text-align: left;
     width: 60%;
+    text-transform: uppercase;
   }
 
   .mainright {
+    border: 1px solid #333;
     text-align: center;
     width: 40%;
+  }
+
+  .mainleftbigtittle {
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+
+  .mainleftcards {
+    display: flex;
+    padding: 3px;
+    flex-basis: content;
+    padding: 10px;
+  }
+
+  .mainleftimg {
+    border-radius: 5px;
+    border: 1px solid #333;
+    max-width:300px;
+  }
+  .mainlefttittles {
+    padding: 5px;
+    font-weight: bold;
+  }
+
+  .mainleftcontent {
+    padding: 5px;
+    justify-items: stretch;
+    text-transform: initial;
+    font-weight: lighter;
+  }
+
+ 
+
+  .footerimg {
+    border-radius: 5px;
+    border: 1px solid #333;
+    max-width:200px;
+    max-height: 110px;
+    padding: 5px;
+  }
+
+  .footerimgcontainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    padding-left: 20px;
   }
