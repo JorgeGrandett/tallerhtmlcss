@@ -1,9 +1,9 @@
   html {
     background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .titulo {
-    font-family: Georgia, "Times New Roman",Times, serif;
     width: 900px;
     color: white;
     font-size: 17px;
@@ -21,7 +21,6 @@
   }
 
   .redireccion {
-    font-family: Georgia, "Times New Roman",Times, serif;
     width: 900px;
     color: blank;
     font-size: 20px;
