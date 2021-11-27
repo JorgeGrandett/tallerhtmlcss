@@ -2,8 +2,7 @@ html {
   font-family: 'Montserrat', sans-serif;
   background-color: #EBF3F3;
 }
-
-.topnav {
+  .topnav {
     overflow: hidden;
     background-color: #333;
   }
@@ -27,15 +26,54 @@ html {
     color: white;
   }
 
-  .formcontainer {
-    display: flex;
-    text-align: center;
-    width: 100%;
-    height: auto;
-  }
   .formulario {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario {
+    text-align: center;
+  }
+
+  .inputnumber {
+    width: 200px;
+  }
+  .inputtext {
+    width: 400px;
+  }
+
+  .inputtextarea {
+    resize: none;
+  }
+
+  .inputcorreo {
+    width: 300px;
+  }
+
+  .inputfrutas {
+    width: 200px;
+  }
+
+  .enviar {
+    width: 70px;
+    height: 35px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+  }
+
+  table {
+    table-layout: auto;
+    width: 70%;
+    text-align: left;
+    color: black;
+    background-color: #DBDFEA;
+    border: 1px solid blue;
+  }
+
+  td {
+    height: 30px;
   }

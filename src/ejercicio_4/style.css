@@ -125,6 +125,7 @@ html {
     background-color: #199319;
     color: white;
     text-decoration: none;
+    cursor: pointer;
  }
 
  .mainrightlater {
@@ -133,6 +134,7 @@ html {
     text-transform: uppercase;
     background-color: #295EC8;
     color: white;
+    cursor: pointer;
  }
 
  footer{
