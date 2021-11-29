@@ -153,7 +153,7 @@ html {
     grid-row-start: 6;
     grid-column: span 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 5px;
   }
@@ -181,7 +181,7 @@ html {
   }
 
   .nuevocurso a {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   .nuevocurso p {
     padding: 10px;
