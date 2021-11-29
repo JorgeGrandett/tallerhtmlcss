@@ -48,3 +48,141 @@ html {
     text-decoration: none;
     color: black;
   }
+
+  main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+  }
+
+  main > div {
+    background-color: #D3B1E2;
+    padding: 10px;
+
+  }
+
+  main > h3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin: 20px;
+  }
+  
+  main .descripcion {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+    padding: 10px;
+  }
+
+  main .videocurso {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin: auto;
+  }
+
+  main .temas {
+    grid-row: span 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+    padding: 20px;
+  }
+
+  main .objetivos {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    margin: auto;
+    padding: 10px;
+  }
+
+  main .redes {
+    grid-row-start: 4;
+    grid-column-start: 2;
+  }
+
+  main .redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .redes .listaredes {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 15;
+    padding: 5px;
+  }
+
+  main .contacto {
+    grid-row-start: 5;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .contacto > h4 {
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    font-size: 1.4em;
+  }
+
+  .contacto textarea {
+    resize: none;
+  }
+
+  main .contacto .aceptar {
+    display: flex;
+    margin: 5px;
+  }
+
+  main .contacto .aceptar input{
+    padding: 8px;
+    margin-right: 10px;
+  }
+
+  main .nuevoscurso {
+    grid-row-start: 6;
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 5px;
+  }
+
+  main .nuevoscurso > h3 {
+    grid-column: span 4;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  main .nuevoscurso > div {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px solid gray;
+  }
+
+  .nuevocurso section {
+    display: flex;
+    padding: 10px;
+  }
+
+  .nuevocurso img {
+    margin-right: 20px;
+  }
+
+  .nuevocurso a {
+    font-size: 1.5em;
+  }
+  .nuevocurso p {
+    padding: 10px;
+    font-size: 1em;
+  }
