@@ -15,5 +15,141 @@
         <a class="active" href="../index.html">Inicio</a>
         <a href="#about">Acerca de...</a>
     </div>
+    <section class="insert-data">
+        <section class="new">
+            <h2>Insertar Nuevo Caso:</h2>
+            <section>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Ubicación</label>
+                        </td>
+                        <td>
+                            <select id="location">
+                                <option value="Antioquia">Antioquia</option>
+                                <option value="Atlantico">Atlantico</option>
+                                <option value="Bogota">Bogota</option>
+                                <option value="Bolivar">Bolivar</option>
+                                <option value="Boyacá">Boyacá</option>
+                                <option value="Caldas">Caldas</option>
+                                <option value="Cauca">Cauca</option>
+                                <option value="Cesar">Cesar</option>
+                                <option value="Cundinamarca">Cundinamarca</option>
+                                <option value="Huila">Huila</option>
+                                <option value="Magdalena">Magdalena</option>
+                                <option value="Meta">Meta</option>
+                                <option value="Nariño">Nariño</option>
+                                <option value="Nte de Sant">Nte de Sant</option>
+                                <option value="Quindio">Quindio</option>
+                                <option value="Risaralda">Risaralda</option>
+                                <option value="Santander">Santander</option>
+                                <option value="Tolima">Tolima</option>
+                                <option value="Valle del Cauca">Valle del Cauca</option>
+                                <option value="Casanare">Casanare</option>
+                                <option value="San Andrés">San Andrés</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Genero</label>
+                        </td>
+                        <td>
+                            <select id="genere">
+                                <option value="Mujer">Mujer</option>
+                                <option value="Hombre">Hombre</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label id="years-label">Edad</label>
+                        </td>
+                        <td>
+                            <input type="number" id="years">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Causa</label>
+                        </td>
+                        <td>
+                            <select id="couse">
+                                <option value="Importado">Importado (Viaje)</option>
+                                <option value="Relacionado">Relacionado</option>
+                                <option value="En estudio">En estudio</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Manejo</label>
+                        </td>
+                        <td>
+                            <select id="drive">
+                                <option value="Casa">Casa</option>
+                                <option value="Hospital">Hospital</option>
+                                <option value="UCI">UCI</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <button onclick="newData()">Insertar</button>
+            </section>
+        </section>
+        <section class="recover">
+            <h2>Recuperados</h2>
+            <label>Cantidad de recuperados</label>
+            <br>
+            <input type="number" id="recover">
+            <br>
+            <button onclick="recover()">Actualizar</button>
+        </section>
+        <section class="dead">
+            <h2>Decesos</h2>
+            <label>Cantidad de decesos</label>
+            <br>
+            <input type="number" id="dead">
+            <br>
+            <button onclick="dead()">Actualizar</button>
+        </section>
+        <section class="next">
+            <button onclick="next()">Pasar el dia</button>
+        </section>
+    </section>
+    <section class="show-data">
+        <h1>Analisis de datos</h1>
+        <section class="analisis-panel">
+            <h2 id="analisis-label">test</h2>
+            <label>Cambiar de region</label>
+            <select id="analyzed-location">
+                <option value="Antioquia">Antioquia</option>
+                <option value="Atlantico">Atlantico</option>
+                <option value="Bogota">Bogota</option>
+                <option value="Bolivar">Bolivar</option>
+                <option value="Boyacá">Boyacá</option>
+                <option value="Caldas">Caldas</option>
+                <option value="Cauca">Cauca</option>
+                <option value="Cesar">Cesar</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Huila">Huila</option>
+                <option value="Magdalena">Magdalena</option>
+                <option value="Meta">Meta</option>
+                <option value="Nariño">Nariño</option>
+                <option value="Nte de Sant">Nte de Sant</option>
+                <option value="Quindio">Quindio</option>
+                <option value="Risaralda">Risaralda</option>
+                <option value="Santander">Santander</option>
+                <option value="Tolima">Tolima</option>
+                <option value="Valle del Cauca">Valle del Cauca</option>
+                <option value="Casanare">Casanare</option>
+                <option value="San Andrés">San Andrés</option>
+            </select>
+            <button onclick="changeLocation()">Actualizar</button>
+        </section>
+        <section class="general-data" id="general-data"></section>
+        <section class="values-data" id="values-data"></section>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
