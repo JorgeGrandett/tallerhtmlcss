@@ -136,7 +136,22 @@ html {
   }
 
   .contacto textarea {
+    margin: 0;
+    border-radius: 2px;
     resize: none;
+    font-size: 1.1rem;
+  }
+
+  .inputtext, .inputcorreo {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 50%;
+    border-bottom: 0.3rem solid transparent;
   }
 
   main .contacto .aceptar {
@@ -147,6 +162,13 @@ html {
   main .contacto .aceptar input{
     padding: 8px;
     margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 10px 20px 0;
+    border: 1px solid #ccc;
+    background: #eee;
+    border-radius: 8px 8px 8px 8px;
   }
 
   main .nuevoscurso {
